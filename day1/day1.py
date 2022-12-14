@@ -39,7 +39,9 @@ def find_the_most_calories_held_by_elf(elves_with_calories: list, number_of_back
 
 if __name__ == "__main__":
 
-    file = open("day1/elf_list.txt", "r", encoding="utf-8").read()
+    with open("day1/elf_list.txt", "r", encoding="utf-8") as file_to_read:
+        file = file_to_read.read()
+
     elves = read_list_and_list_of_elves_with_calories(file)
 
     # Day 1 part 1
